@@ -33,7 +33,10 @@ const Banner = (props: Props) => {
     }, [api, currentBanner]);
 
     return (
-        <Carousel setApi={setApi} className="my-12 mx-20">
+        <Carousel
+            setApi={setApi}
+            className="py-12 px-20 bg-[#F5F7FA] dark:bg-gray-800"
+        >
             <CarouselContent>
                 {Array.from({ length: 5 }).map((_, index) => (
                     <CarouselItem key={index}>

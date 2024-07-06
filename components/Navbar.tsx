@@ -10,7 +10,7 @@ const Navbar = (props: Props) => {
         <div className="flex p-5 mx-10 justify-between items-center">
             <div className="flex gap-2 items-center justify-between">
                 <Image className="h-5 w-8" src={Logo} alt="Logo" />
-                <p className="font-sans text-3xl font-bold">Nexcent</p>
+                <p className="font-sans text-2xl font-bold">Nexcent</p>
             </div>
             <div className="flex gap-6">
                 <p>Home</p>
@@ -21,8 +21,10 @@ const Navbar = (props: Props) => {
                 <p>FAQ</p>
             </div>
             <div className="flex gap-2">
-                <Button variant="secondary">Login</Button>
-                <Button>Sign up</Button>
+                <Button variant="secondary" className="dark:bg-slate-300">
+                    Login
+                </Button>
+                <Button className="dark:bg-darkGreen">Sign up</Button>
             </div>
         </div>
     );
