@@ -11,7 +11,7 @@ const DummyBanner = (props: Props) => {
             <div className="flex flex-col justify-between items-start gap-4">
                 <p className="text-6xl text-gray-500 dark:text-gray-300 font-semibold">
                     Lessons and insights <br></br>
-                    <span className="text-green dark:text-darkGreen">
+                    <span className="text-lightGreen dark:text-darkGreen">
                         from 8 years
                     </span>
                 </p>

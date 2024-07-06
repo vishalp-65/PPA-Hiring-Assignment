@@ -90,3 +90,13 @@
     background-color: #4caf4f;
     border-radius: 50%;
 }
+
+/* Colour for svg */
+
+.filter-gray-200 {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.filter-gray-900 {
+    filter: invert(1) sepia(10) saturate(50) hue-rotate(175deg);
+}
