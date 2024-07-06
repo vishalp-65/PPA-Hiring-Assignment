@@ -15,7 +15,7 @@ const CustomerComponent = (props: Props) => {
     const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
 
     return (
-        <div className="flex items-center justify-between gap-7 px-16 py-8">
+        <div className="flex items-center justify-between gap-7 px-16 py-8 bg-[#F5F7FA] dark:bg-gray-800">
             <Image src={customerImage} alt="Customer Image" />
             <div className="flex flex-col items-start justify-between gap-3">
                 <p className="text-primaryFont dark:text-gray-400 w-[92%]">
