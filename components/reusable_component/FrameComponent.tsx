@@ -10,7 +10,7 @@ type Props = {
 
 const FrameComponent = (props: Props) => {
     return (
-        <div className="flex items-center justify-center gap-5 px-16 py-10">
+        <div className="flex items-center justify-center gap-16 px-16 py-10">
             <Image
                 className=""
                 src={props.img}

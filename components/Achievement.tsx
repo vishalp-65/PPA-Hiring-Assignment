@@ -9,7 +9,7 @@ type Props = {};
 
 const Achievements = (props: Props) => {
     return (
-        <div className="bg-[#F5F7FA] dark:bg-gray-800 w-full flex items-center justify-around gap-3 px-20 py-10">
+        <div className="bg-[#F5F7FA] dark:bg-gray-800 w-full flex items-center justify-around gap-3 px-20 py-16">
             <div className="flex flex-col items-start justify-between gap-4">
                 <p className="text-3xl text-gray-500 dark:text-gray-300 font-semibold">
                     Helping a local <br></br>

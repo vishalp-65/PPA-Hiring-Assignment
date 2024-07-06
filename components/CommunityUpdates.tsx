@@ -28,10 +28,10 @@ const CommunityUpdates = (props: Props) => {
                             className="rounded-sm h-80 w-96"
                         />
                         <div
-                            className="absolute bottom-[35%] top-[65%] flex flex-col bg-[#F5F7FA] dark:bg-gray-800 
-                            w-80 h-36 items-center justify-between gap-1 p-3 rounded-lg shadow-2xl"
+                            className="absolute bottom-[35%] top-[69%] flex flex-col bg-[#F5F7FA] dark:bg-gray-800 
+                            w-80 h-36 items-center justify-between gap-1 p-3 rounded-xl shadow-2xl"
                         >
-                            <p className="text-center text-wrap w-[80%] font-semibold text-seconderyFont dark:text-gray-400">
+                            <p className="text-center text-wrap w-[80%] font-semibold text-seconderyFont dark:text-gray-300">
                                 {community.text}
                             </p>
                             <div className="flex items-center cursor-pointer justify-between gap-2 text-lightGreen dark:text-darkGreen">

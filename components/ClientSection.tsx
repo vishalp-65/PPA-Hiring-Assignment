@@ -27,14 +27,14 @@ const Clients = (props: Props) => {
 
                 <div className="flex gap-10 items-center w-[80%] mt-8 justify-between">
                     {logos.map((logo, index) => (
-                        <Image
-                            key={index}
-                            src={logo}
-                            width={38}
-                            height={38}
-                            alt={`Company Logo ${index + 1}`}
-                            className="dark:text-white"
-                        />
+                        <div key={index} className=" dark:filter-logo">
+                            <Image
+                                src={logo}
+                                width={38}
+                                height={38}
+                                alt={`Company Logo ${index + 1}`}
+                            />
+                        </div>
                     ))}
                 </div>
             </div>

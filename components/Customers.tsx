@@ -32,7 +32,7 @@ const CustomerComponent = (props: Props) => {
                     condimentum id. Curabitur id nibh id sem dignissim finibus
                     ac sit amet magna.
                 </p>
-                <p className="text-lightGreen dark:text-darkGreen font-semibold text-lg">
+                <p className="text-lightGreen dark:text-darkGreen font-semibold text-lg cursor-pointer">
                     Tim Smith
                 </p>
                 <p className="text-primaryFont dark:text-gray-400">
@@ -51,7 +51,7 @@ const CustomerComponent = (props: Props) => {
                             />
                         ))}
                     </div>
-                    <div className="flex items-center justify-between gap-1 text-lightGreen dark:text-darkGreen">
+                    <div className="flex items-center justify-between gap-1 cursor-pointer text-lightGreen dark:text-darkGreen">
                         <p className="text-nowrap">Meet all customers </p>
                         <ArrowRight className="h-5 w-6" />
                     </div>
