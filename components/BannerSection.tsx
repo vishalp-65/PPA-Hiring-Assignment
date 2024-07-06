@@ -1,16 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import DummyBanner from "./DummyBanner";
 import Dot from "@/public/Dot.svg";
 import {
     Carousel,
     CarouselApi,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import DummyBanner from "./reusable_component/DummyBanner";
 
 type Props = {};
 

@@ -1,6 +1,7 @@
-import Banner from "@/components/Banner";
-import Clients from "@/components/Clients";
-import Navbar from "@/components/Navbar";
+import Banner from "@/components/BannerSection";
+import Clients from "@/components/ClientSection";
+import MiddleSection from "@/components/MiddleSection";
+import Navbar from "@/components/NavbarSection";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 
@@ -11,6 +12,7 @@ export default function Home() {
                 <Navbar />
                 <Banner />
                 <Clients />
+                <MiddleSection />
             </div>
             <ThemeSwitch />
         </ThemeContextProvider>

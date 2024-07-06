@@ -7,7 +7,7 @@ import Logo4 from "@/public/svg/Logo4.svg";
 import Logo5 from "@/public/svg/Logo5.svg";
 import Logo6 from "@/public/svg/Logo6.svg";
 import Logo7 from "@/public/svg/Logo7.svg";
-import { aboutNextGen } from "@/lib/aboutNextGen";
+import { aboutNextGen } from "@/lib/data";
 import Image from "next/image";
 
 type Props = {};
@@ -38,11 +38,14 @@ const Clients = (props: Props) => {
                     ))}
                 </div>
             </div>
+
+            {/* Community Section */}
+
             <div className="flex flex-col items-center justify-between mt-20">
                 <p className="text-3xl font-semibold text-primaryFont dark:text-gray-300 text-center">
                     Manage your entire community <br /> in a single system
                 </p>
-                <p className="text-sm text-seconderyFont dark:text-gray-400 mt-6">
+                <p className="text-sm text-seconderyFont dark:text-gray-400 mt-4">
                     Who is Nextcent suitable for?
                 </p>
                 <div className="flex items-center justify-between gap-5 mt-12">
@@ -50,7 +53,7 @@ const Clients = (props: Props) => {
                         <div className="flex flex-col items-center justify-center gap-4 p-4">
                             <div className="relative">
                                 <Image
-                                    className="filter-gray-200 dark:filter-gray-200 absolute bottom-4 right-3 icon"
+                                    className="filter-gray-900 absolute bottom-4 right-3 icon"
                                     src={data.logo}
                                     alt={data.name}
                                 />
