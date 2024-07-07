@@ -7,8 +7,8 @@ type Props = {};
 
 const FooterSection = (props: Props) => {
     return (
-        <div>
-            <div className="bg-[#F5F7FA] dark:bg-gray-800 flex flex-col items-center justify-between gap-10 px-16 py-14 mt-14">
+        <div className="w-full">
+            <div className="bg-[#F5F7FA] dark:bg-gray-800 flex flex-col items-center justify-between gap-10 px-10 py-14 mt-5">
                 <div className="text-5xl font-semibold text-center flex flex-col gap-3">
                     <p>Pellentesque suscipit</p>
                     <p>fringilla libero eu.</p>

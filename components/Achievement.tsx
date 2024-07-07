@@ -9,10 +9,10 @@ type Props = {};
 
 const Achievements = (props: Props) => {
     return (
-        <div className="bg-[#F5F7FA] dark:bg-gray-800 w-full flex items-center justify-around gap-3 px-20 py-16">
-            <div className="flex flex-col items-start justify-between gap-4">
-                <p className="text-3xl text-gray-500 dark:text-gray-300 font-semibold">
-                    Helping a local <br></br>
+        <div className="bg-[#F5F7FA] dark:bg-gray-800 w-full md:flex md:flex-row sm:flex sm:flex-col items-center justify-around md:gap-3 sm:gap-10 px-10 md:px-20 py-16">
+            <div className="flex flex-col items-start justify-between gap-2 md:gap-4">
+                <p className="text-3xl text-gray-500 dark:text-gray-300 md:text-start sm:text-center font-semibold">
+                    Helping a local <br />
                     <span className="text-lightGreen dark:text-darkGreen">
                         business reinvent itself
                     </span>
@@ -21,7 +21,7 @@ const Achievements = (props: Props) => {
                     We reached here with our hard work and dedication
                 </p>
             </div>
-            <div className="grid grid-cols-2 gap-x-10 gap-y-5">
+            <div className="grid grid-cols-2 gap-x-10 gap-y-5 mt-8 md:mt-0">
                 <div className="flex items-center gap-3">
                     <Image
                         src={Group3}

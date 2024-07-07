@@ -10,7 +10,10 @@ type Props = {
 
 const FrameComponent = (props: Props) => {
     return (
-        <div className="flex items-center justify-center gap-16 px-16 py-10">
+        <div
+            className="md:flex md:flex-row sm:flex sm:flex-col items-center 
+            md:justify-between sm:justify-center gap-16 px-16 py-10"
+        >
             <Image
                 className=""
                 src={props.img}
@@ -18,11 +21,11 @@ const FrameComponent = (props: Props) => {
                 height={400}
                 width={400}
             />
-            <div className="flex flex-col items-start justify-between">
-                <h2 className="text-3xl font-semibold text-primaryFont dark:text-gray-300 w-[70%]">
+            <div className="flex flex-col md:items-start sm:items-center justify-between mt-5">
+                <h2 className="text-3xl text-wrap font-semibold md:text-start sm:text-center text-primaryFont dark:text-gray-300 md:w-96 sm:w-52">
                     {props.name}
                 </h2>
-                <p className="text-sm text-seconderyFont dark:text-gray-400 w-[85%] mt-4">
+                <p className="text-sm text-wrap text-seconderyFont md:text-start sm:text-center dark:text-gray-400 md:w-[35rem] sm:w-60 mt-4">
                     {props.text}
                 </p>
                 <Button className="dark:bg-darkGreen mt-8">Learn More</Button>

@@ -54,7 +54,7 @@ const config = {
                 },
                 // Custom colours
                 lightGreen: "#4CAF4F",
-                darkGreen: "#277E29",
+                darkGreen: "#278E00",
                 primaryFont: "#4D4D4D",
                 primaryDark: "",
                 seconderyFont: "#717171",

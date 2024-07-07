@@ -7,21 +7,26 @@ type Props = {};
 
 const DummyBanner = (props: Props) => {
     return (
-        <div className="flex justify-between items-center dark:bg-gray-800">
+        <div
+            className="flex justify-center md:justify-between w-96 md:w-full h-56 md:h-80 
+                items-center dark:bg-gray-800 px-2 gap-2"
+        >
             <div className="flex flex-col justify-between items-start">
-                <p className="text-6xl text-gray-500 dark:text-gray-300 font-semibold">
-                    Lessons and insights <br></br>
+                <p className="md:text-6xl text-2xl text-wrap text-gray-500 dark:text-gray-300 font-semibold">
+                    Lessons and insights <br />
                     <span className="text-lightGreen dark:text-darkGreen">
                         from 8 years
                     </span>
                 </p>
-                <p className="text-gray-500 text-sm dark:text-gray-400 mt-3">
+                <p className="text-gray-500 text-sm text-wrap w-[90%] dark:text-gray-400 mt-3">
                     Where to grow your business as a photographer: site or
                     social media ?
                 </p>
-                <Button className="dark:bg-darkGreen mt-8">Register</Button>
+                <Button className="dark:bg-darkGreen mt-3 md:mt-8 px-1.5 py-0 md:px-5 md:py-2">
+                    Register
+                </Button>
             </div>
-            <div>
+            <div className="">
                 <Image
                     src={Banner}
                     height={350}

@@ -33,7 +33,7 @@ const Banner = (props: Props) => {
     return (
         <Carousel
             setApi={setApi}
-            className="pt-12 pb-1 px-20 bg-[#F5F7FA] dark:bg-gray-800"
+            className="pt-5 md:pt-12 pb-1 px-1 md:px-20 w-full bg-[#F5F7FA] dark:bg-gray-800"
         >
             <CarouselContent>
                 {Array.from({ length: 5 }).map((_, index) => (
@@ -42,7 +42,7 @@ const Banner = (props: Props) => {
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <div className="flex justify-center py-2">
+            <div className="flex items-center justify-center py-2">
                 {Array.from({ length: count }).map((_, index) => (
                     <div className="mr-0.5 cursor-pointer">
                         <Image

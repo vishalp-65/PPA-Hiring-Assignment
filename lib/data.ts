@@ -45,7 +45,7 @@ export const communityData = [
     },
     {
         logo: marketing2,
-        text: "What are your safeguarding responsibilities and how can you manage them?",
+        text: "What are your safeguarding and how can you manage them?",
     },
     {
         logo: marketing3,

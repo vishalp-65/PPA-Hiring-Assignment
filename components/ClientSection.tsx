@@ -16,16 +16,16 @@ const Clients = (props: Props) => {
     const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7];
 
     return (
-        <div className="flex flex-col justify-between items-center w-[100%] py-10 px-5">
-            <div className="flex flex-col justify-between items-center w-[100%]">
+        <div className="flex flex-col justify-between items-center w-auto py-10 px-5">
+            <div className="flex flex-col justify-between items-center w-auto">
                 <p className="text-3xl text-primaryFont dark:text-gray-200 font-semibold">
                     Our Clients
                 </p>
-                <p className="text-sm text-seconderyFont dark:text-gray-400 mt-3">
+                <p className="text-sm text-seconderyFont text-center w-72 md:w-auto text-wrap dark:text-gray-400 mt-3">
                     We have been working with some Fortune 500+ clients
                 </p>
 
-                <div className="flex gap-10 items-center w-[80%] mt-8 justify-between">
+                <div className="flex flex-wrap gap-10 items-center md:w-[60rem] w-72 mt-8 justify-center">
                     {logos.map((logo, index) => (
                         <div key={index} className=" dark:filter-logo">
                             <Image
@@ -42,15 +42,15 @@ const Clients = (props: Props) => {
             {/* Community Section */}
 
             <div className="flex flex-col items-center justify-between mt-20">
-                <p className="text-3xl font-semibold text-primaryFont dark:text-gray-300 text-center">
-                    Manage your entire community <br /> in a single system
+                <p className="text-3xl font-semibold text-primaryFont dark:text-gray-300 text-center md:w-[30rem] w-72">
+                    Manage your entire community in a single system
                 </p>
                 <p className="text-sm text-seconderyFont dark:text-gray-400 mt-4">
                     Who is Nextcent suitable for?
                 </p>
-                <div className="flex items-center justify-between gap-5 mt-12">
+                <div className="md:flex md:flex-row sm:flex sm:flex-col items-center justify-between gap-5">
                     {aboutNextGen.map((data, index) => (
-                        <div className="flex flex-col items-center justify-center gap-4 p-4">
+                        <div className="flex flex-col items-center justify-center gap-4 p-2 text-wrap mt-10">
                             <div className="relative">
                                 <Image
                                     className="filter-gray-900 absolute bottom-4 right-3 icon"
@@ -59,10 +59,10 @@ const Clients = (props: Props) => {
                                 />
                                 <div className="ml-2 bg-green-100 rounded-br-xl rounded-tl-xl h-9 w-9 dark:bg-gray-800" />
                             </div>
-                            <p className="text-2xl text-primaryFont font-bold dark:text-gray-300 w-[50%] text-center">
+                            <p className="text-2xl text-primaryFont font-bold dark:text-gray-300 text-wrap w-48 text-center">
                                 {data.name}{" "}
                             </p>
-                            <p className="text-sm text-seconderyFont dark:text-gray-400 w-[80%] text-center">
+                            <p className="text-sm text-seconderyFont dark:text-gray-400 w-72 text-center">
                                 {data.text}
                             </p>
                         </div>

@@ -15,10 +15,15 @@ const CustomerComponent = (props: Props) => {
     const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
 
     return (
-        <div className="flex items-center justify-between gap-7 px-16 py-8 bg-[#F5F7FA] dark:bg-gray-800">
-            <Image src={customerImage} alt="Customer Image" />
-            <div className="flex flex-col items-start justify-between gap-3">
-                <p className="text-primaryFont dark:text-gray-400 w-[92%]">
+        <div className="flex flex-col md:flex md:flex-row items-center justify-center md:justify-evenly gap-4 md:gap-10 px-16 py-8 bg-[#F5F7FA] dark:bg-gray-800 w-auto">
+            <Image
+                src={customerImage}
+                alt="Customer Image"
+                height={300}
+                width={300}
+            />
+            <div className="flex flex-col items-start justify-evenly gap-2">
+                <p className="text-primaryFont dark:text-gray-400 text-wrap w-full md:w-[40rem]">
                     Maecenas dignissim justo eget nulla rutrum molestie.
                     Maecenas lobortis sem dui, vel rutrum risus tincidunt
                     ullamcorper. Proin eu enim metus. Vivamus sed libero ornare,
@@ -32,14 +37,14 @@ const CustomerComponent = (props: Props) => {
                     condimentum id. Curabitur id nibh id sem dignissim finibus
                     ac sit amet magna.
                 </p>
-                <p className="text-lightGreen dark:text-darkGreen font-semibold text-lg cursor-pointer">
+                <p className="text-lightGreen  dark:text-darkGreen font-semibold text-lg cursor-pointer">
                     Tim Smith
                 </p>
-                <p className="text-primaryFont dark:text-gray-400">
+                <p className="text-primaryFont text-wrap dark:text-gray-400">
                     British Dragon Boat Racing Association
                 </p>
-                <div className="flex items-center gap-8 justify-between mt-10">
-                    <div className="flex gap-10 items-center w-[80%] justify-between">
+                <div className="flex flex-wrap md:flex-nowrap items-center gap-8 justify-center md:justify-between mt-10">
+                    <div className="flex flex-wrap md:flex-nowrap gap-10 items-center w-[80%] justify-center md:justify-between">
                         {logos.map((logo, index) => (
                             <Image
                                 key={index}
@@ -51,7 +56,7 @@ const CustomerComponent = (props: Props) => {
                             />
                         ))}
                     </div>
-                    <div className="flex items-center justify-between gap-1 cursor-pointer text-lightGreen dark:text-darkGreen">
+                    <div className="flex items-center justify-center gap-1 cursor-pointer text-lightGreen dark:text-darkGreen">
                         <p className="text-nowrap">Meet all customers </p>
                         <ArrowRight className="h-5 w-6" />
                     </div>
