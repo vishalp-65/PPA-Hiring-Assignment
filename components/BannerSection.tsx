@@ -44,7 +44,7 @@ const Banner = (props: Props) => {
             </CarouselContent>
             <div className="flex items-center justify-center py-2">
                 {Array.from({ length: count }).map((_, index) => (
-                    <div className="mr-0.5 cursor-pointer">
+                    <div key={index} className="mr-0.5 cursor-pointer">
                         <Image
                             key={index}
                             src={Dot}

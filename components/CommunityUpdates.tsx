@@ -14,14 +14,17 @@ const CommunityUpdates = (props: Props) => {
                 </p>
                 <p className="text-sm text-seconderyFont dark:text-gray-400 w-72 text-wrap md:w-[50%] text-center">
                     The Nexcent blog is the best place to read about the latest
-                    membership insights, trends and more. See who's joining the
+                    membership insights, trends and more. See who is joining the
                     community, read about how our community are increasing their
-                    membership income and lot's more.​
+                    membership income and lots more.​
                 </p>
             </div>
             <div className="md:flex md:flex-row sm:flex sm:flex-col items-center justify-between md:gap-6 sm:gap-40">
                 {communityData.map((community, ind) => (
-                    <div className="relative flex flex-col items-center justify-between md:mt-0 mb-5">
+                    <div
+                        key={ind}
+                        className="relative flex flex-col items-center justify-between md:mt-0 mb-5"
+                    >
                         <Image
                             src={community.logo}
                             alt="community Images"

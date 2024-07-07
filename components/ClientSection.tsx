@@ -50,7 +50,10 @@ const Clients = (props: Props) => {
                 </p>
                 <div className="md:flex md:flex-row sm:flex sm:flex-col items-center justify-between gap-5">
                     {aboutNextGen.map((data, index) => (
-                        <div className="flex flex-col items-center justify-center gap-4 p-2 text-wrap mt-10">
+                        <div
+                            key={index}
+                            className="flex flex-col items-center justify-center gap-4 p-2 text-wrap mt-10"
+                        >
                             <div className="relative">
                                 <Image
                                     className="filter-gray-900 absolute bottom-4 right-3 icon"
