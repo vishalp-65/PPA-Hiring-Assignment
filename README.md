@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PPA Hiring Assignment
 
-## Getting Started
 
-First, run the development server:
+## Overview
+
+This is a responsive web application built with Next.js. It showcases multiple sections such as a hero section with a carousel, client logos, services, features, statistics with count-up animation, testimonials, blog articles, and a footer with social media links. The app supports light and dark mode and is optimized for fast page load times.
+
+## Deployed link
+https://landingpage-vishal-panchals-projects.vercel.app/
+
+
+## Installation
+
+1. Clone the Repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+https://github.com/vishalp-65/PPA-Hiring-Assignment.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Clone the Repository:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd ppa-hiring-assignment
+npm install
+```
+3. Run the App:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Banner Section with Carousel**: A dynamic carousel in the banner section.
+- **Client Logos**: Showcase of client logos.
+- **Services & Features**: Detailed sections for services and features.
+- **Statistics with Count-Up Animation**: Engaging statistics with a smooth count-up effect.
+- **Testimonials**: Section for client testimonials.
+- **Blog Articles**: Display of blog articles.
+- **Footer**: Footer with social media links.
+- **Light and Dark Mode Toggle**: Seamless switch between light and dark themes.
+- **Responsive Design**: Optimized for *mobile* and *desktop* only(As mentioned in the assignment).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Next.js**
+- **TypeScript**
+- **ShadCN UI**
+- **Tailwind CSS**
 
-## Deploy on Vercel
+## Custom Hooks
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Utilized custom hooks for count animation within the app.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## How to Run
+
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Run the development server using `npm run dev`.
+
+
+## Contact
+
+For any questions or feedback, please reach out at [vishal65.p@gmail.com].
+
+
