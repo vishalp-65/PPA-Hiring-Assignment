@@ -10,12 +10,14 @@ type Props = {};
 const MiddleSection = (props: Props) => {
     return (
         <div className="flex flex-col items-center md:justify-between sm:justify-center gap-3">
+            {/* Dummy frame component */}
             <FrameComponent
                 img={frameData[0].logo}
                 name={frameData[0].name}
                 text={frameData[0].text}
             />
 
+            {/* Achievements component */}
             <Achievements />
 
             <FrameComponent
@@ -23,8 +25,11 @@ const MiddleSection = (props: Props) => {
                 name={frameData[1].name}
                 text={frameData[1].text}
             />
+
+            {/* Customer component */}
             <CustomerComponent />
 
+            {/* Community component */}
             <CommunityUpdates />
         </div>
     );

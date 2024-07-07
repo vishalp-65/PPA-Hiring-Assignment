@@ -12,10 +12,14 @@ import { ArrowRight } from "lucide-react";
 type Props = {};
 
 const CustomerComponent = (props: Props) => {
+    // Create array of logo for better traversing
     const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
 
     return (
-        <div className="flex flex-col md:flex md:flex-row items-center justify-center md:justify-evenly gap-4 md:gap-10 px-16 py-8 bg-[#F5F7FA] dark:bg-gray-800 w-auto">
+        <div
+            className="flex flex-col md:flex md:flex-row items-center justify-center 
+            md:justify-evenly gap-4 md:gap-10 px-10 md:px-16 py-8 bg-[#F5F7FA] dark:bg-gray-800 w-full"
+        >
             <Image
                 src={customerImage}
                 alt="Customer Image"
@@ -23,7 +27,7 @@ const CustomerComponent = (props: Props) => {
                 width={300}
             />
             <div className="flex flex-col items-start justify-evenly gap-2">
-                <p className="text-primaryFont dark:text-gray-400 text-wrap w-full md:w-[40rem]">
+                <p className="text-primaryFont dark:text-gray-400 text-wrap w-full md:w-auto">
                     Maecenas dignissim justo eget nulla rutrum molestie.
                     Maecenas lobortis sem dui, vel rutrum risus tincidunt
                     ullamcorper. Proin eu enim metus. Vivamus sed libero ornare,
@@ -45,6 +49,7 @@ const CustomerComponent = (props: Props) => {
                 </p>
                 <div className="flex flex-wrap md:flex-nowrap items-center gap-8 justify-center md:justify-between mt-10">
                     <div className="flex flex-wrap md:flex-nowrap gap-10 items-center w-[80%] justify-center md:justify-between">
+                        {/* Company logos  */}
                         {logos.map((logo, index) => (
                             <Image
                                 key={index}

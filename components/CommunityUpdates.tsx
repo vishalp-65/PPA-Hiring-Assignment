@@ -19,6 +19,8 @@ const CommunityUpdates = (props: Props) => {
                     membership income and lots more.​
                 </p>
             </div>
+
+            {/* Testimonials  */}
             <div className="md:flex md:flex-row sm:flex sm:flex-col items-center justify-between md:gap-6 sm:gap-40">
                 {communityData.map((community, ind) => (
                     <div
@@ -30,6 +32,7 @@ const CommunityUpdates = (props: Props) => {
                             alt="community Images"
                             className="rounded-sm h-80 w-96"
                         />
+                        {/* Card for image  */}
                         <div
                             className="absolute bottom-[35%] top-[69%] flex flex-col bg-[#F5F7FA] dark:bg-gray-800 
                             w-[80%] h-[40%] items-center justify-between gap-1 px-3 py-4 rounded-xl shadow-2xl"
@@ -38,7 +41,9 @@ const CommunityUpdates = (props: Props) => {
                                 {community.text}
                             </p>
                             <div className="flex items-center cursor-pointer justify-between gap-2 text-lightGreen dark:text-darkGreen">
-                                <p className="text-nowrap">Readmore</p>
+                                <p className="text-nowrap font-semibold">
+                                    Readmore
+                                </p>
                                 <ArrowRight className="h-5 w-5" />
                             </div>
                         </div>

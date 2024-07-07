@@ -25,7 +25,7 @@ const Clients = (props: Props) => {
                     We have been working with some Fortune 500+ clients
                 </p>
 
-                <div className="flex flex-wrap gap-10 items-center md:w-[60rem] w-72 mt-8 justify-center">
+                <div className="flex flex-wrap gap-10 md:gap-20 items-center md:w-full sm:w-72 mt-8 justify-center">
                     {logos.map((logo, index) => (
                         <div key={index} className=" dark:filter-logo">
                             <Image
@@ -48,6 +48,8 @@ const Clients = (props: Props) => {
                 <p className="text-sm text-seconderyFont dark:text-gray-400 mt-4">
                     Who is Nextcent suitable for?
                 </p>
+
+                {/* Showing client data  */}
                 <div className="md:flex md:flex-row sm:flex sm:flex-col items-center justify-between gap-5">
                     {aboutNextGen.map((data, index) => (
                         <div

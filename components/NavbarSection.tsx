@@ -8,6 +8,7 @@ import { IoIosMenu } from "react-icons/io";
 type Props = {};
 
 const Navbar = (props: Props) => {
+    // State variable for mobile menu
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {}, [isOpen]);
@@ -15,6 +16,7 @@ const Navbar = (props: Props) => {
     return (
         <div className="bg-[#F5F7FA] dark:bg-gray-800 p-3 md:p-5 md:px-10 w-screen">
             <div className="flex justify-between items-center">
+                {/* Nexcel Logo  */}
                 <div className="flex gap-2 items-center justify-between">
                     <Image
                         className="h-5 w-8 dark:text-white"
@@ -34,6 +36,7 @@ const Navbar = (props: Props) => {
                     </div>
                 </div>
 
+                {/* Login / Sign up buttons  */}
                 <div className="hidden md:block">
                     <div className="flex gap-2">
                         <Button
@@ -46,6 +49,7 @@ const Navbar = (props: Props) => {
                     </div>
                 </div>
 
+                {/* Menu button for mobile screen  */}
                 <div className="block md:hidden">
                     <IoIosMenu
                         onClick={() => setIsOpen(!isOpen)}
@@ -54,10 +58,11 @@ const Navbar = (props: Props) => {
                 </div>
             </div>
 
+            {/* Responsive navbar for mobile screen  */}
             <div
                 className={`${
-                    isOpen ? "block" : "hidden"
-                } md:hidden transition ease-in-out delay-300`}
+                    isOpen ? "animate-slide-down" : "hidden"
+                } md:hidden transition-all duration-500 ease-in-out delay-300`}
             >
                 <div className="flex flex-wrap flex-col items-center justify-center px-3 py-0.5 mt-3">
                     <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
